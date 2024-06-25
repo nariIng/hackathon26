@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 13:38:42 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/25 14:15:37 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 14:45:47 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@ int	ft_key(int key, t_data *data)
 	mlx_put_image_to_window(data->mlx_ptr, data->win_ptr, data->sary, 0, 0);
 	if (data->finish == 0 && data->over == 0)
 	{
-		if (key == RIGHT)
+		if (key == RIGHT || key == RIGHT_)
 			ft_moov_right(data);
-		else if (key == LEFT)
+		else if (key == LEFT || key == LEFT_)
 			ft_moov_left(data);
-		else if (key == UP)
+		else if (key == UP || key == UP_)
 			ft_moov_up(data);
-		else if (key == DOWN)
+		else if (key == DOWN || key == DOWN_)
 			ft_moov_down(data);
 		// ft_printf("%d\n", data->step);
 		ft_draw(data);

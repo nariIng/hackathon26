@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 11:15:32 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/25 08:06:34 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 14:44:28 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@
 # define UP 119
 # define RIGHT 100
 # define DOWN 115
+# define LEFT_ 65361
+# define RIGHT_ 65363
+# define UP_ 65362
+# define DOWN_ 65364
 
 /*------windows-----*/
 # define WIDTH 500
