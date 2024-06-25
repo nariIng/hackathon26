@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 08:19:05 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/24 15:03:06 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 13:52:51 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ void	ft_draw_ext(t_data *data)
 
 	map = data->map;
 	i = 0;
-	void *sary = mlx_xpm_file_to_image(data->mlx_ptr, "map.xpm", &data->width, &data->heigth);
-	mlx_put_image_to_window(data->mlx_ptr, data->win_ptr, sary, 0, 0);
 	while (i < data->heigth / SCARE_SIZE)
 	{
 		str = map->content;
@@ -72,8 +70,11 @@ int	ft_add_img(t_data *data, char c, int y, int x)
 		data->texture = data->xpm[0];
 		mlx_put_image_to_window(data->mlx_ptr, data->win_ptr, data->texture, x, y);
 	}
-	// else if (c == 'O')
-	// 	data->texture = data->xpm[1];
+	// else if (c == 'm')
+	// {
+	// 	data->texture = data->xpm[6];
+	// 	mlx_put_image_to_window(data->mlx_ptr, data->win_ptr, data->texture, x, y);
+	// }
 	// else if (c == '0')
 	// 	data->texture = data->xpm[2];
 	// else if (c == 'C')

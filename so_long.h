@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 10:41:23 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/02 09:10:44 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 14:19:35 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ typedef struct s_data
 	void		*mlx_ptr;
 	void		*win_ptr;
 	void		*texture;
+	void		*sary;
 	void		**xpm;
 	void		**p_d;
 	void		**p_l;
@@ -68,6 +69,7 @@ typedef struct s_data
 	t_player	player;
 	t_escape	escape;
 	t_list		*map;
+	t_list		*tmp;
 	t_list		*copy_map;
 }		t_data;
 

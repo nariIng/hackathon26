@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 13:35:29 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/02 07:15:49 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 11:51:19 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ int	ft_destroy_img(t_data *data)
 	i = 0;
 	while ((data->p_u)[i])
 		mlx_destroy_image(data->mlx_ptr, (data->p_u)[i++]);
+	mlx_destroy_image(data->mlx_ptr, data->sary);
 	return (free(data->xpm), free(data->p_d), free(data->p_l),
 		free(data->p_u), free(data->p_r), 0);
 }

@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 13:38:42 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/02 07:13:11 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 14:15:37 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_key(int key, t_data *data)
 		ft_change_escape(data);
 	if (key == ESC)
 		ft_exit_key(data);
+	data->sary = mlx_xpm_file_to_image(data->mlx_ptr, "./assets/map2.xpm", &data->width, &data->heigth);
+	mlx_put_image_to_window(data->mlx_ptr, data->win_ptr, data->sary, 0, 0);
 	if (data->finish == 0 && data->over == 0)
 	{
 		if (key == RIGHT)
@@ -28,7 +30,7 @@ int	ft_key(int key, t_data *data)
 			ft_moov_up(data);
 		else if (key == DOWN)
 			ft_moov_down(data);
-		ft_printf("%d\n", data->step);
+		// ft_printf("%d\n", data->step);
 		ft_draw(data);
 	}
 	return (0);

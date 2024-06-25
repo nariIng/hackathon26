@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 14:41:11 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/24 14:22:02 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 14:17:54 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ void	ft_map(t_data *data, char *file)
 		str = get_next_line(fd);
 	}
 	data->map = map;
+	data->tmp = data->map;
 	close(fd);
 	ft_clean_map(data->map);
 	ft_init_map(data);

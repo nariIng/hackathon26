@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 11:15:32 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/02 07:10:40 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 08:06:34 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 /*------windows-----*/
 # define WIDTH 500
 # define HEIGHT 500
-# define SCARE_SIZE 64
+# define SCARE_SIZE 32
 
 /*-------color------*/
 # define RED 0xFF0000

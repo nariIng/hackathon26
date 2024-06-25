@@ -6,7 +6,7 @@
 /*   By: enarindr <enarindr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 08:05:13 by enarindr          #+#    #+#             */
-/*   Updated: 2024/06/24 14:26:57 by enarindr         ###   ########.fr       */
+/*   Updated: 2024/06/25 14:22:21 by enarindr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	ft_start(t_data *data)
 {
 	data->mlx_ptr = mlx_init();
 	data->win_ptr = mlx_new_window
-		(data->mlx_ptr, data->width, data->heigth, "varavaran-kely");
+		(data->mlx_ptr, data->width, data->heigth, "voyage en 2cv");
 	data->step = 0;
 	data->moov = 0;
 	data->sleep = 0;
